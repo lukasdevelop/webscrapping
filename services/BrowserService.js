@@ -17,7 +17,7 @@ class BrowserService {
         this.browser = await puppeteer.launch({ headless: false});
         this.page = await this.browser.newPage();
 
-        await this.page.goto(`https://pratagy.letsbook.com.br/D/Reserva?checkin=${this.checkin}&checkout=${this.checkout}&cidade=&hotel=12&adultos=1&criancas=&destino=Pratagy+Beach+Resort+All+Inclusive&promocode=&tarifa=&mesCalendario=9%2F1%2F2022`)
+        await this.page.goto(`${process.env.BASE_URL}?checkin=${this.checkin}&checkout=${this.checkout}&cidade=&hotel=12&adultos=1&criancas=&destino=Pratagy+Beach+Resort+All+Inclusive&promocode=&tarifa=&mesCalendario=9%2F1%2F2022`)
         
        
         const data = await this.page.evaluate(() => {
