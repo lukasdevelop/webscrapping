@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const ConvertDate = require('../helpers/ConvertDate')
+const fs = require('fs')
 
 class BrowserService {
 
@@ -15,8 +16,10 @@ class BrowserService {
 
         this.browser = await puppeteer.launch({ headless: false});
         this.page = await this.browser.newPage();
+
         await this.page.goto(`https://pratagy.letsbook.com.br/D/Reserva?checkin=${this.checkin}&checkout=${this.checkout}&cidade=&hotel=12&adultos=1&criancas=&destino=Pratagy+Beach+Resort+All+Inclusive&promocode=&tarifa=&mesCalendario=9%2F1%2F2022`)
         
+       
         const data = await this.page.evaluate(() => {
 
             const nameRoom = document.getElementsByClassName('quartoNome')
@@ -50,8 +53,18 @@ class BrowserService {
     
             }))
         })
+
+        if(data.length > 0){
     
+            await fs.writeFile('backup.json', JSON.stringify(data, null, 2), err => {
+                if(err) throw new Error(err)
+
+                console.log('file backup created!')
+            })
+        }
+
         return data
+
     }
 
     static closeBrowser(browser) {

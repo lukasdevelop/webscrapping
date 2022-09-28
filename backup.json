@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Studio Casal",
+    "description": "No prédio principal do Resort, sem varanda e próximo à recepção. Dispõe de uma cama de casal e uma cama de solteiro. Acomoda até 3 pessoas, nas opções de 1 adulto e 2 crianças (free até 12 anos) ou 2 adultos e 1 criança (free até 12 anos) ou 3 adultos. Sem cama extra. Inclui ingressos do Pratagy Acqua Park*. All inclusive com serviço de buffet.",
+    "price": "R$ 1.119,00\n/noite",
+    "imagem": "https://letsimage.s3.amazonaws.com/letsbook/193/quartos/30/fotoprincipal.jpg"
+  },
+  {
+    "name": "Cabana Premium",
+    "description": "Próximo à praia e com varanda. Dispõe de duas camas de casal. Acomoda até 4 pessoas, nas opções de 1 adulto + 3 crianças (free até 12 anos) ou 2 adultos e 2 crianças (free até 12 anos) ou 3 adultos e 1 criança (free até 12 anos) ou 4 adultos. Sem cama extra. Inclui ingressos para o Pratagy Acqua Park*. All inclusive com serviço de buffet.",
+    "price": "R$ 1.489,00\n/noite",
+    "imagem": "https://letsimage.s3.amazonaws.com/letsbook/193/quartos/30/2.jpg"
+  },
+  {
+    "name": "Superior",
+    "description": "Próximo ao rio e no 2º piso. Dispõe de uma cama de casal, uma cama de solteiro e uma auxiliar. Acomoda até 4 pessoas: 1 adulto + 3 crianças (free até 12 anos) ou 2 adultos e 2 crianças (free até 12 anos) ou 3 adultos e 1 criança (free até 12 anos). Sem cama extra. Inclui ingressos do Pratagy Acqua Park*. All inclusive com serviço de buffet.",
+    "price": "R$ 1.638,00\n/noite",
+    "imagem": "https://letsimage.s3.amazonaws.com/letsbook/193/quartos/61/fotoprincipal.jpg"
+  },
+  {
+    "name": "Boutique Vista Mata",
+    "description": "All Inclusive Premium com serviço de mordomia e restaurante a la carte. Localizado na parte mais alta da Reserva Pratagy em ambiente com exclusividade. Acomoda até 3 adultos ou 2 adultos e 1 criança (free até 12 anos) ou 1 adulto e 2 crianças (free até 12 anos). Inclui ingressos do Pratagy Acqua Park para todos os dias.",
+    "price": "R$ 1.638,00\n/noite",
+    "imagem": "https://letsimage.s3.amazonaws.com/letsbook/193/quartos/61/1.jpg"
+  },
+  {
+    "name": "Boutique Refúgio",
+    "description": "All Inclusive Premium com serviço de mordomia e restaurante a la carte. Acomodação única com paredes de vidro e banheira, localizada ao redor da mata na parte mais alta da Reserva Pratagy. Acomoda até 02 adultos. Inclui ingressos do Pratagy Acqua Park para todos os dias.",
+    "price": "R$ 1.802,00\n/noite",
+    "imagem": "https://letsimage.s3.amazonaws.com/letsbook/193/quartos/61/2.jpg"
+  },
+  {
+    "name": "Superior Premium",
+    "description": "Com banheira na varanda e no 1º piso. Dispõe de uma cama de casal, uma cama de solteiro e uma auxiliar. Para até 4 pessoas: 1 adulto + 3 crianças (free até 12 anos) ou 2 adultos e 2 crianças (free até 12 anos) ou 3 adultos e 1 criança (free até 12 anos). Sem cama extra. Inclui ingressos do Pratagy Acqua Park*. All inclusive com serviço de buffet.",
+    "price": "R$ 1.802,00\n/noite",
+    "imagem": "https://letsimage.s3.amazonaws.com/letsbook/193/quartos/61/3.jpg"
+  }
+]
