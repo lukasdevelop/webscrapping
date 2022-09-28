@@ -1,8 +1,6 @@
 const express = require('express');
 const BrowserService = require('../services/BrowserService');
 
-const se = new BrowserService()
-
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -13,10 +11,10 @@ router.post('/search', async (req, res) => {
 
     const { checkin, checkout } = req.body
 
-    await BrowserService.getBrowser()
+    const data = await BrowserService.getBrowser(checkin, checkout)
 
     res.send(
-        'teste'
+        data
     )
 })
 
