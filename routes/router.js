@@ -1,36 +1,27 @@
 const express = require('express');
 const BrowserService = require('../services/BrowserService');
-const fs = require('fs')
 
 const router = express.Router();
 
+//A data abaixo foi a usada durante o desenolvimento para sucesso
 router.get('/', (req, res) => {
-    res.send('Hello Asksuite World!');
+    res.send('Data SUGERIDA PARA TESTES: 01/10/2022 a 04/10/2022');
 });
 
 router.post('/search', async (req, res) => {
 
     const { checkin, checkout } = req.body
 
+    //chamo o service
     const data = await BrowserService.getBrowser(checkin, checkout)
 
+    //o site tem um delay de resposta caso aconteça ele retorna um array vazio. Exibo a mensagem abaixo. (Poderia pensar em algo melhor com mais tempo)
     if (data.length === 0) {
-        await fs.readFile('backup.json', 'utf-8', (err, file) => {
-            if (err) throw new Error(err);
-
-            console.log('Backup activate! - API with delay...')
-
-            res.send(file)
-
-        })
+        res.send('API with delay, try again!')
     }else {
-
+        //Tudo certo exibo o resultado.
+        console.log('API Online')
         res.send(data)
     }
-
-
-
 })
-
-
 module.exports = router;
